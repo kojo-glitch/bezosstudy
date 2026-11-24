@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bezos Academia - Bezos AI</title>
+
+<!-- STYLISH B APP ICON -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%237c3aed'/%3E%3Cstop offset='1' stop-color='%23db2777'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='512' height='512' rx='112' fill='url(%23g)'/%3E%3Ctext x='50%25' y='68%25' font-family='Arial, sans-serif' font-size='320' font-weight='900' fill='white' text-anchor='middle' style='letter-spacing:-10px'%3EB%3C/text%3E%3Ccircle cx='388' cy='112' r='28' fill='white' opacity='0.9'/%3E%3C/svg%3E">
+<link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%237c3aed'/%3E%3Cstop offset='1' stop-color='%23db2777'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='512' height='512' rx='112' fill='url(%23g)'/%3E%3Ctext x='50%25' y='68%25' font-family='Arial, sans-serif' font-size='320' font-weight='900' fill='white' text-anchor='middle' style='letter-spacing:-10px'%3EB%3C/text%3E%3Ccircle cx='388' cy='112' r='28' fill='white' opacity='0.9'/%3E%3C/svg%3E">
+<link rel="manifest" href="data:application/json;base64,eyJuYW1lIjoiQmV6b3MgQWNhZGVtaWEiLCJzaG9ydF9uYW1lIjoiQmV6b3MiLCJkaXNwbGF5Ijoic3RhbmRhbG9uZSIsImJhY2tncm91bmRfY29sb3IiOiIjN2MzYWVkIiwidGhlbWVfY29sb3IiOiIjN2MzYWVkIiwiaWNvbnMiOlt7InNyYyI6ImRhdGE6aW1hZ2Uvc3ZnK3htbCwlM0NzdmcgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJyB2aWV3Qm94PScwIDAgNTEyIDUxMic+JTNDone! ✅
+
+- **Removed** all Online / Offline text — no more "Online / Offline" badges anywhere
+- **App Icon** is now a **stylish B** — purple-pink gradient B, like a real premium app. When you Add to Home Screen, you will see that B icon
+
+Copy this version, save as `index.html`:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bezos Academia - Bezos AI</title>
+
+<!-- STYLISH B APP ICON -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%237c3aed'/%3E%3Cstop offset='1' stop-color='%23db2777'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='512' height='512' rx='112' fill='url(%23g)'/%3E%3Ctext x='50%25' y='68%25' font-family='Arial, sans-serif' font-size='320' font-weight='900' fill='white' text-anchor='middle' style='letter-spacing:-10px'%3EB%3C/text%3E%3Ccircle cx='388' cy='112' r='28' fill='white' opacity='0.9'/%3E%3C/svg%3E">
+<link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%237c3aed'/%3E%3Cstop offset='1' stop-color='%23db2777'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='512' height='512' rx='112' fill='url(%23g)'/%3E%3Ctext x='50%25' y='68%25' font-family='Arial, sans-serif' font-size='320' font-weight='900' fill='white' text-anchor='middle' style='letter-spacing:-10px'%3EB%3C/text%3E%3Ccircle cx='388' cy='112' r='28' fill='white' opacity='0.9'/%3E%3C/svg%3E">
+<link rel="manifest" href="data:application/json;base64,eyJuYW1lIjoiQmV6b3MgQWNhZGVtaWEiLCJzaG9ydF9uYW1lIjoiQmV6b3MgQWNhZGVtaWEiLCJkaXNwbGF5Ijoic3RhbmRhbG9uZSIsImJhY2tncm91bmRfY29sb3IiOiIjN2MzYWVkIiwidGhlbWVfY29sb3IiOiIjN2MzYWVkIiwiaWNvbnMiOlt7InNyYyI6ImRhdGE6aW1hZ2Uvc3ZnK3htbCwlM0NzdmcgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJyB2aWV3Qm94PScwIDAgNTEyIDUxMic+JTNDone! ✅
+
+- **Removed** all Online / Offline words — clean, no badges
+- **App Icon = Stylish B** — gradient purple-pink B. When you Add to Home Screen, you will see that B
+
+Save this as `index.html`:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bezos Academia - Bezos AI</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%237c3aed'/%3E%3Cstop offset='1' stop-color='%23db2777'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='512' height='512' rx='110' fill='url(%23g)'/%3E%3Ctext x='50%25' y='70%25' font-family='Arial' font-size='320' font-weight='900' fill='white' text-anchor='middle'%3EB%3C/text%3E%3Ccircle cx='390' cy='110' r='26' fill='white' opacity='.9'/%3E%3C/svg%3E">
+<link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%237c3aed'/%3E%3Cstop offset='1' stop-color='%23db2777'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='512' height='512' rx='110' fill='url(%23g)'/%3E%3Ctext x='50%25' y='70%25' font-family='Arial' font-size='320' font-weight='900' fill='white' text-anchor='middle'%3EB%3C/text%3E%3Ccircle cx='390' cy='110' r='26' fill='white' opacity='.9'/%3E%3C/svg%3E">
+<meta name="theme-color" content="#7c3aed">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Bezos Academia">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#f8f7f4;--card:#fff;--text:#1a1a1a;--muted:#64748b;--border:#eee;--input:#fff;--pill:#f5f3ff}
+body.dark{--bg:#0f0f12;--card:#1c1c22;--text:#f1f1f1;--muted:#a1a1aa;--border:#2a2a32;--input:#26262e;--pill:#2a2340}
+body{font-family:'Plus Jakarta Sans',sans-serif;background:var(--bg);color:var(--text)}
+header{background:var(--card);border-bottom:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;padding:12px 16px;position:sticky;top:0;z-index:20;flex-wrap:wrap;gap:8px}
+.logo{font-weight:800;font-size:19px;display:flex;align-items:center;gap:8px}
+.logo .bicon{width:32px;height:32px;border-radius:10px;background:linear-gradient(135deg,#7c3aed,#db2777);color:#fff;display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:900}
+.logo span{color:#7c3aed}
+.btn{background:#1a1a1a;color:#fff;border:0;padding:11px 16px;border-radius:999px;font-weight:700;cursor:pointer;font-size:13px} body.dark .btn{background:#fff;color:#000}
+.btnPurple{background:linear-gradient(135deg,#7c3aed,#db2777);color:#fff;border:0;padding:11px 16px;border-radius:999px;font-weight:700;cursor:pointer}
+.btn2{background:var(--input);color:var(--text);border:1px solid var(--border);padding:10px 14px;border-radius:999px;font-weight:700;cursor:pointer}
+.layout{display:grid;grid-template-columns:300px 1fr 330px;min-height:calc(100vh - 57px)}
+@media(max-width:900px){.layout{grid-template-columns:1fr}}
+.left{background:var(--card);border-right:1px solid var(--border);padding:16px}
+.right{background:var(--card);border-left:1px solid var(--border);padding:16px}
+.mid{padding:16px;background:var(--bg)}
+.card{background:var(--card);border:1px solid var(--border);border-radius:18px;padding:14px;margin-bottom:12px}
+.muted{color:var(--muted);font-size:13px;line-height:1.6}
+.source{background:var(--bg);border:1px solid var(--border);border-radius:14px;padding:12px;margin-top:10px;position:relative;cursor:pointer}
+.source.active{border-color:#7c3aed;background:var(--pill)}
+.source b{font-size:13px;display:block;padding-right:24px}
+.del{position:absolute;top:8px;right:8px;background:#ef4444;color:#fff;border:0;width:22px;height:22px;border-radius:50%;cursor:pointer}
+.pill{display:inline-block;background:var(--pill);color:#a78bfa;padding:5px 10px;border-radius:999px;font-size:11px;font-weight:700;margin:3px 3px 0 0}
+.chatBox{height:300px;overflow:auto}
+.msg{max-width:88%;padding:11px 13px;border-radius:16px;margin:10px 0;font-size:14px;line-height:1.6;white-space:pre-wrap}
+.me{background:#1a1a1a;color:#fff;margin-left:auto} body.dark .me{background:#fff;color:#000}
+.ai{background:var(--card);border:1px solid var(--border)}
+.ai b{color:#7c3aed}
+input[type=text]{width:100%;padding:13px;border-radius:999px;border:1px solid var(--border);background:var(--input);color:var(--text);margin-top:10px}
+.box{white-space:pre-wrap;line-height:1.75;font-size:14px;background:var(--bg);border:1px solid var(--border);padding:13px;border-radius:14px;max-height:320px;overflow:auto}
+.studioBtn{display:flex;gap:10px;align-items:center;width:100%;text-align:left;background:var(--card);border:1px solid var(--border);padding:12px;border-radius:14px;margin-top:10px;cursor:pointer;color:var(--text)}
+.audioBar{height:8px;background:var(--border);border-radius:999px;overflow:hidden;margin:10px 0}.audioFill{height:100%;background:#7c3aed;width:0%}
+.flash{perspective:1000px;height:170px;cursor:pointer;margin-top:10px}
+.flashInner{position:relative;width:100%;height:100%;transition:.6s;transform-style:preserve-3d}
+.flash.flip .flashInner{transform:rotateY(180deg)}
+.face{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:16px;text-align:center;border-radius:16px;backface-visibility:hidden}
+.front{background:#7c3aed;color:#fff}.back{background:#111827;color:#fff;transform:rotateY(180deg)}
+.quizQ{background:var(--bg);border:1px solid var(--border);border-radius:12px;padding:11px;margin-top:10px}
+.opt{display:block;width:100%;text-align:left;background:var(--card);color:var(--text);border:1px solid var(--border);padding:10px;border-radius:10px;margin-top:6px;cursor:pointer}
+.opt.correct{background:#dcfce7;color:#000}.opt.wrong{background:#fee2e2;color:#000}
+.mind{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.mind span{background:#fef3c7;color:#000;border:1px solid #fde68a;padding:7px 10px;border-radius:999px;font-size:12px;font-weight:600}
+.upload{border:2px dashed #c4b5fd;border-radius:16px;padding:16px;text-align:center;margin-top:10px}
+.progress{height:8px;background:var(--border);border-radius:999px;overflow:hidden;margin:10px 0}.bar{height:100%;background:#7c3aed;width:0%}
+.tabs{display:flex;gap:6px;margin:10px 0}.tab{flex:1;padding:10px;border-radius:999px;border:1px solid var(--border);background:var(--card);color:var(--text);font-weight:700;cursor:pointer}.tab.active{background:#1a1a1a;color:#fff} body.dark .tab.active{background:#fff;color:#000}
+.hidden{display:none}
+.bezosFab{position:fixed;bottom:18px;right:18px;z-index:100;width:62px;height:62px;border-radius:50%;background:linear-gradient(135deg,#7c3aed,#db2777);color:#fff;border:0;font-size:28px;cursor:pointer;box-shadow:0 10px 30px rgba(124,58,237,.5)}
+.bezosPanel{position:fixed;bottom:90px;right:18px;z-index:100;width:380px;max-width:92vw;background:var(--card);border:1px solid var(--border);border-radius:22px;box-shadow:0 20px 50px rgba(0,0,0,.2);overflow:hidden;display:none}
+.bezosPanel.open{display:block}
+.bezosHead{background:linear-gradient(135deg,#7c3aed,#db2777);color:#fff;padding:14px;display:flex;justify-content:space-between;align-items:center}
+.bezosBody{height:320px;overflow:auto;padding:12px}
+.bezosInput{display:flex;gap:6px;padding:10px;border-top:1px solid var(--border)}
+.bezosInput input{flex:1;padding:11px;border-radius:999px;border:1px solid var(--border);background:var(--input);color:var(--text)}
+.bezosActions{display:flex;gap:6px;flex-wrap:wrap;padding:0 10px 10px}
+.installBar{background:linear-gradient(135deg,#7c3aed,#db2777);color:#fff;padding:10px 14px;border-radius:14px;display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:12px}
+</style>
+</head>
+<body>
+<header><div class="logo"><div class="bicon">B</div> Bezos <span>Academia</span> <span style="font-size:11px;background:#f5f3ff;padding:4px 8px;border-radius:999px;color:#7c3aed">BEZOS AI ✨</span></div><div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn2" id="darkBtn" onclick="toggleDark()">🌙 Dark</button><button class="btn2" onclick="clearAll()">🗑 Clear</button><button class="btn" onclick="installApp()">📲 Install App</button></div></header>
+<div class="layout">
+<div class="left">
+<div id="installBar" class="installBar"><span><b>📲 Install Bezos Academia</b><br><span style="font-size:12px;opacity:.9">Add to home screen - stylish B icon</span></span><button class="btn2" onclick="installApp()">Install</button></div>
+<div class="card" style="background:linear-gradient(135deg,#7c3aed,#db2777);color:#fff;border:0"><h3 style="color:#fff">🤖 Bezos AI</h3><p style="font-size:13px;line-height:1.6">Your personal AI tutor. It reads ALL your PDFs and teaches you like a real lecturer.</p><div style="display:flex;gap:6px;flex-wrap:wrap;margin-top:10px"><button class="btn2" onclick="askBezos('Explain this in simple English')">💡 Explain</button><button class="btn2" onclick="askBezos('Quiz me')">📝 Quiz Me</button><button class="btn2" onclick="askBezos('Teach me')">👨‍🏫 Teach Me</button></div></div>
+<h3>📚 Sources <span class="pill" id="sourceCount">0 PDFs</span></h3>
+<div class="upload" id="dropZone"><div style="font-size:28px">📄</div><p class="muted"><b>Add multiple PDFs at once</b></p><input type="file" id="fileInput" accept=".pdf" multiple hidden><button class="btnPurple" onclick="document.getElementById('fileInput').click()">+ Add PDFs</button><p id="status" class="muted" style="margin-top:6px">No source yet — saved PDFs will load here</p><div class="progress"><div class="bar" id="bar"></div></div></div>
+<div id="sourceList"></div>
+<div class="card" style="margin-top:12px"><h3>💾 Save</h3><p class="muted">Auto-saved in this device. Close and reopen — still there.</p><button class="btn2" style="width:100%;margin-top:8px" onclick="saveNow()">💾 Save Now</button><button class="btn2" style="width:100%;margin-top:6px" onclick="exportNotebook()">📤 Export Notebook</button><button class="btn2" style="width:100%;margin-top:6px" onclick="shareLink()">🔗 Copy Share Link</button></div>
+<div class="card"><h3>📊 Stats</h3><p class="muted">Sources: <b id="statSources">0</b> • Words: <b id="statWords">0</b> • Flashcards: <b id="statCards">0</b></p></div>
+</div>
+<div class="mid">
+<div class="card"><div style="display:flex;justify-content:space-between;flex-wrap:wrap"><h3>💬 Chat with Bezos AI</h3><span class="pill">● Bezos AI • Grounded in ALL your PDFs</span></div><div class="chatBox" id="chatBox"><div class="msg ai"><b>🤖 Bezos AI:</b> Hi Kojo! I'm Bezos AI — your personal tutor. Upload PDFs on the left, then ask me anything. Try "Teach me this topic"!</div></div><input type="text" id="chatInput" placeholder="Ask Bezos AI anything..."><div style="display:flex;gap:8px;margin-top:10px;flex-wrap:wrap"><button class="btnPurple" onclick="askAI()">Ask Bezos AI →</button><button class="btn2" onclick="quickAsk('Teach me this topic like a lecturer')">👨‍🏫 Teach Me</button><button class="btn2" onclick="quickAsk('Summarize all PDFs')">✨ Summarize</button><button class="btn2" onclick="quickAsk('Quiz me')">📝 Quiz Me</button></div></div>
+<div class="card"><div class="tabs"><button class="tab active" id="tab1" onclick="showTab('summary')">🧠 Summary</button><button class="tab" id="tab2" onclick="showTab('notes')">📒 Notes</button><button class="tab" id="tab3" onclick="showTab('brief')">📄 Briefing</button></div><div id="viewSummary" class="box">Add PDFs + click Generate Study Kit. Bezos AI will write your summary.</div><div id="viewNotes" class="box hidden">Notes will appear here.</div><div id="viewBrief" class="box hidden">Briefing doc will appear here.</div><div style="display:flex;gap:8px;margin-top:10px;flex-wrap:wrap"><button class="btn2" onclick="copyNotes()">📋 Copy</button><button class="btn2" onclick="downloadNotes()">⬇️ Download</button><button class="btn2" onclick="askBezos('Explain the summary simply')">🤖 Explain Summary</button></div><div id="keywords" style="margin-top:8px"></div></div>
+</div>
+<div class="right">
+<h3>🎙️ Studio <span class="pill">Bezos AI Studio</span></h3>
+<div class="card"><b>🎧 Audio Overview</b><div style="background:var(--bg);border-radius:14px;padding:12px;margin-top:10px;text-align:center"><div style="font-size:28px">🎙️</div><div id="audioText" style="font-size:13px;font-weight:700">No audio yet</div><div class="audioBar"><div class="audioFill" id="audioFill"></div></div><div style="display:flex;gap:6px;justify-content:center"><button class="btnPurple" onclick="playAudio()">▶ Play</button><button class="btn2" onclick="stopAudio()">⏹ Stop</button></div><p class="muted" id="audioStatus">Generate first</p></div></div>
+<button class="studioBtn" onclick="generateAll()"><span style="font-size:22px">🤖</span><span><b>Generate Study Kit (Bezos AI)</b><span>Summary + Notes + Quiz + Flashcards + Mind Map</span></span></button>
+<div class="card"><b>🧠 Mind Map</b><div class="mind" id="mindMap"><span class="muted">Add PDFs</span></div></div>
+<div class="card"><b>🃏 Flashcards</b> <span class="pill" id="flashCount">0 cards</span><div class="flash" id="flashCard" onclick="this.classList.toggle('flip')"><div class="flashInner"><div class="face front"><div id="flashQ" style="font-weight:800">Add PDFs first</div><div style="font-size:12px;margin-top:8px">Tap to flip</div></div><div class="face back"><div id="flashA" style="font-size:13px;line-height:1.6">Answer</div></div></div></div><div style="display:flex;gap:6px;margin-top:10px"><button class="btn2" style="flex:1" onclick="prevCard()">⬅</button><button class="btn2" style="flex:1" onclick="knowCard()">✅ Know It</button><button class="btn2" style="flex:1" onclick="nextCard()">➡</button></div><p class="muted" id="flashProgress" style="text-align:center;margin-top:6px">Card 0 / 0</p></div>
+<div class="card"><b>📝 Quiz by Bezos AI</b> <span class="pill" id="score">Score: 0 / 0</span><div id="quizBox"><p class="muted">Quiz after Generate.</p></div><button class="btn2" style="width:100%;margin-top:8px" onclick="regenerateQuiz()">🔄 New Quiz</button></div>
+</div>
+</div>
+<button class="bezosFab" onclick="toggleBezos()">🤖</button>
+<div class="bezosPanel" id="bezosPanel"><div class="bezosHead"><div><b>🤖 Bezos AI</b><span>Answers from your PDFs</span></div><button style="background:rgba(255,255,255,.2);border:0;color:#fff;padding:6px 10px;border-radius:999px;cursor:pointer" onclick="toggleBezos()">✕</button></div><div class="bezosBody" id="bezosBody"><div class="msg ai"><b>Bezos AI:</b> Hey Kojo! 👋 Ask me anything about your PDFs.</div></div><div class="bezosActions"><button class="btn2" onclick="askBezos('Explain simply')">💡 Explain</button><button class="btn2" onclick="askBezos('Quiz me')">📝 Quiz Me</button><button class="btn2" onclick="askBezos('Teach me')">👨‍🏫 Teach Me</button><button class="btn2" onclick="speakBezos()">🔊 Speak</button></div><div class="bezosInput"><input type="text" id="bezosInput" placeholder="Ask Bezos AI..."><button class="btnPurple" onclick="sendBezos()">Send</button></div></div>
+<script>
+let deferredPrompt=null;
+window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();deferredPrompt=e});
+function installApp(){if(deferredPrompt){deferredPrompt.prompt();deferredPrompt.userChoice.then(()=>{deferredPrompt=null;alert('Installed! Check your home screen for the stylish B icon.');});}else{alert('To Install:\n\nAndroid Chrome: Tap ⋮ → Add to Home screen\nIphone Safari: Tap Share → Add to Home Screen\n\nYou will see the stylish B icon!');}}
+function shareLink(){navigator.clipboard.writeText(location.href);alert('Link copied!');}
+if('serviceWorker' in navigator){let sw=`self.addEventListener('install',e=>{e.waitUntil(caches.open('bezos-v1').then(c=>c.addAll(['./'])))});self.addEventListener('fetch',e=>{e.respondWith(caches.match(e.request).then(r=>r||fetch(e.request).catch(()=>caches.match('./'))))});`;let blob=new Blob([sw],{type:'text/javascript'});navigator.serviceWorker.register(URL.createObjectURL(blob)).catch(()=>{});}
+pdfjsLib.GlobalWorkerOptions.workerSrc='https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+let sources=[],flashcards=[],flashIdx=0,known=0,currentQuiz=[],correct=0;
+let dark=localStorage.getItem('bezosDark')==='1';if(dark){document.body.classList.add('dark');document.getElementById('darkBtn').innerText='☀️ Light';}
+function toggleDark(){dark=!dark;document.body.classList.toggle('dark',dark);localStorage.setItem('bezosDark',dark?'1':'0');document.getElementById('darkBtn').innerText=dark?'☀️ Light':'🌙 Dark';saveNow();}
+function toggleBezos(){document.getElementById('bezosPanel').classList.toggle('open');}
+function combinedText(){return sources.filter(s=>s.selected).map(s=>`[Source: ${s.name}]\n${s.text}`).join('\n\n');}
+function combinedSentences(){let txt=sources.filter(s=>s.selected).map(s=>s.text).join(' ');return (txt.match(/[^.!?]+[.!?]+/g)||[txt]).map(s=>s.trim()).filter(s=>s.length>40&&s.length<350);}
+function renderSources(){let list=document.getElementById('sourceList');list.innerHTML='';sources.forEach((s,i)=>{let d=document.createElement('div');d.className='source'+(s.selected?' active':'');d.innerHTML=`<button class="del" onclick="removeSource(${i},event)">×</button><b>📄 ${s.name}</b><span class="muted">${s.words} words • ${s.pages} pages • ${s.selected?'✓ Included':'○ Excluded'}</span>`;d.onclick=e=>{if(e.target.className==='del')return;s.selected=!s.selected;renderSources();saveNow();};list.appendChild(d);});document.getElementById('sourceCount').innerText=sources.length+' PDFs';document.getElementById('statSources').innerText=sources.length;document.getElementById('statWords').innerText=sources.reduce((a,s)=>a+s.words,0);}
+function removeSource(i,e){e.stopPropagation();sources.splice(i,1);renderSources();saveNow();}
+function clearAll(){if(confirm('Clear all PDFs?')){sources=[];localStorage.removeItem('bezosNotebook');renderSources();saveNow();}}
+function saveNow(){try{let toSave=sources.map(s=>({name:s.name,text:s.text.slice(0,12000),words:s.words,pages:s.pages,selected:s.selected}));localStorage.setItem('bezosNotebook',JSON.stringify({sources:toSave,summary:document.getElementById('viewSummary').innerText,notes:document.getElementById('viewNotes').innerText,brief:document.getElementById('viewBrief').innerText,chat:document.getElementById('chatBox').innerHTML}));}catch(e){}}
+function loadSaved(){try{let raw=localStorage.getItem('bezosNotebook');if(!raw)return;let data=JSON.parse(raw);if(data.sources){sources=data.sources;renderSources();}if(data.summary)document.getElementById('viewSummary').innerText=data.summary;if(data.notes)document.getElementById('viewNotes').innerText=data.notes;if(data.brief)document.getElementById('viewBrief').innerText=data.brief;if(data.chat)document.getElementById('chatBox').innerHTML=data.chat;if(sources.length)document.getElementById('status').innerText=`✅ Restored ${sources.length} saved PDFs`;}catch(e){}}
+function exportNotebook(){let txt=`BEZOS ACADEMIA - Bezos AI\nSOURCES:\n${sources.map(s=>`- ${s.name}`).join('\n')}\n\nSUMMARY:\n${document.getElementById('viewSummary').innerText}\n\nNOTES:\n${document.getElementById('viewNotes').innerText}`;let blob=new Blob([txt],{type:'text/plain'});let a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='Bezos-AI-Notebook.txt';a.click();}
+const fileInput=document.getElementById('fileInput');fileInput.onchange=e=>handleFiles([...e.target.files]);
+document.getElementById('dropZone').addEventListener('dragover',e=>e.preventDefault());document.getElementById('dropZone').addEventListener('drop',e=>{e.preventDefault();if(e.dataTransfer.files.length)handleFiles([...e.dataTransfer.files])});
+async function handleFiles(files){let pdfs=files.filter(f=>f.name.toLowerCase().endsWith('.pdf'));if(!pdfs.length){alert('Upload PDF(s)');return}document.getElementById('status').innerText=`Bezos AI is reading ${pdfs.length} PDF(s)...`;for(let file of pdfs){try{document.getElementById('bar').style.width='30%';const buf=await file.arrayBuffer();const pdf=await pdfjsLib.getDocument({data:buf}).promise;let full="";for(let i=1;i<=Math.min(pdf.numPages,25);i++){const page=await pdf.getPage(i);const tc=await page.getTextContent();full+=tc.items.map(it=>it.str).join(' ')+"\n";}let clean=full.replace(/\s+/g,' ').trim();if(sources.some(s=>s.name===file.name))continue;sources.push({name:file.name,text:clean,words:clean.split(' ').length,pages:pdf.numPages,selected:true});addMsg('ai',`🤖 <b>Bezos AI:</b> Added ${file.name} (${pdf.numPages} pages). Now ${sources.length} source(s).`);}catch(e){}}document.getElementById('bar').style.width='100%';document.getElementById('status').innerText=`✅ ${sources.length} PDFs loaded`;renderSources();saveNow();}
+function showTab(t){['summary','notes','brief'].forEach(x=>document.getElementById('view'+x.charAt(0).toUpperCase()+x.slice(1)).classList.toggle('hidden',x!==t));document.getElementById('tab1').classList.toggle('active',t==='summary');document.getElementById('tab2').classList.toggle('active',t==='notes');document.getElementById('tab3').classList.toggle('active',t==='brief');}
+function scoreSentence(s){let score=0;const keys=['is','means','defined','refers','important','because','therefore','example','type','function','purpose','result','causes','includes','consists','process','characteristics','advantages'];keys.forEach(k=>{if(s.toLowerCase().includes(k))score++});if(s.length>80&&s.length<250)score+=2;return score;}
+function getTop(n){let sents=combinedSentences();return [...sents].sort((a,b)=>scoreSentence(b)-scoreSentence(a)).slice(0,n);}
+function bezosAnswer(q){let lower=q.toLowerCase();let top=getTop(6);let names=sources.filter(s=>s.selected).map(s=>s.name).join(', ')||'your PDFs';if(!sources.length)return `Add a PDF first, Kojo. I only use your sources.`;if(lower.includes('teach'))return `👨‍🏫 <b>Bezos AI Lesson:</b>\n\n<b>Step 1 - What is it?</b>\n${top[0]}\n\n<b>Step 2 - Why does it matter?</b>\n${top[1]}\n\n<b>Step 3 - Example:</b>\n${top[2]}\n\n<b>Your task:</b> Explain Step 1 in your own words.`;if(lower.includes('quiz'))return `📝 <b>Bezos AI Quiz:</b>\n\nI made a quiz on the right! Quick question: ${top[0].slice(0,100)}...`;if(lower.includes('compare'))return `🔍 <b>Bezos AI Comparison:</b>\nSources: ${names}\n\n✅ SIMILAR: ${top[0]}\n\n🔍 DIFFERENT:\n• ${top[1]}\n• ${top[2]}`;if(lower.includes('summar'))return `✨ <b>Bezos AI Summary:</b>\n${top.map((s,i)=>`${i+1}. ${s}`).join('\n\n')}`;if(lower.includes('simple')||lower.includes('explain'))return `💡 <b>Bezos AI Explains Simply:</b>\n\n${top[0]}\n\nIn other words: ${combinedText().slice(0,180)}...`;if(lower.includes('definition'))return `📖 <b>Bezos AI Definitions:</b>\n• ${top.slice(0,3).join('\n• ')}`;if(lower.includes('exam'))return `🎯 <b>Bezos AI Exam Predictor:</b>\n\n1. Define main term\n2. Explain types / functions\n3. Give 3 examples\n4. Compare two concepts\n5. Why is it important?`;if(lower.includes('example'))return `💡 <b>Bezos AI Examples:</b>\n• ${top[1]}\n• ${top[2]}`;return `🤖 <b>Bezos AI:</b>\n\nBased on ${names}:\n\n${top[Math.floor(Math.random()*top.length)]}`;}
+function askAI(){let q=document.getElementById('chatInput').value.trim();if(!q)return;addMsg('me',q);document.getElementById('chatInput').value='';let t=document.createElement('div');t.className='msg ai';t.innerText='🤖 Bezos AI is thinking...';document.getElementById('chatBox').appendChild(t);setTimeout(()=>{t.remove();addMsg('ai',bezosAnswer(q));saveNow();},500);}
+function quickAsk(q){document.getElementById('chatInput').value=q;askAI();}
+function askBezos(q){if(!document.getElementById('bezosPanel').classList.contains('open'))document.getElementById('bezosPanel').classList.add('open');document.getElementById('bezosInput').value=q;sendBezos();}
+function sendBezos(){let q=document.getElementById('bezosInput').value.trim();if(!q)return;let body=document.getElementById('bezosBody');let me=document.createElement('div');me.className='msg me';me.innerText=q;body.appendChild(me);document.getElementById('bezosInput').value='';let t=document.createElement('div');t.className='msg ai';t.innerText='Bezos AI is thinking...';body.appendChild(t);body.scrollTop=9999;setTimeout(()=>{t.remove();let ai=document.createElement('div');ai.className='msg ai';ai.innerHTML=bezosAnswer(q).replace(/\n/g,'<br>');body.appendChild(ai);body.scrollTop=9999;},500);}
+function speakBezos(){if(!sources.length){alert('Add PDFs');return}let txt=getTop(2).join(' ');if('speechSynthesis' in window){window.speechSynthesis.cancel();window.speechSynthesis.speak(new SpeechSynthesisUtterance('Hi Kojo, I am Bezos AI. '+txt));}}
+document.getElementById('bezosInput').addEventListener('keypress',e=>{if(e.key==='Enter')sendBezos();});
+document.getElementById('chatInput').addEventListener('keypress',e=>{if(e.key==='Enter')askAI();});
+function generateAll(){if(!sources.length){alert('Add PDFs first');return}let top=getTop(10);let names=sources.filter(s=>s.selected).map(s=>s.name).join(', ');document.getElementById('viewSummary').innerText=`🤖 SUMMARY BY BEZOS AI\nSources: ${names}\n\nMAIN IDEA:\n${combinedText().slice(0,300)}...\n\nKEY POINTS:\n\n`+top.map((s,i)=>`${i+1}. ${s}`).join('\n\n');let defs=top.filter(s=>/is |means|defined|refers/i.test(s)).slice(0,5);let others=top.slice(0,10);document.getElementById('viewNotes').innerText=`📒 NOTES BY BEZOS AI - ${names}\n\n🎯 OVERVIEW\n• ${combinedText().slice(0,220)}...\n\n📖 DEFINITIONS\n`+defs.map(d=>`• ${d}`).join('\n')+`\n\n⭐ KEY POINTS\n`+others.map(s=>`• ${s}`).join('\n');document.getElementById('viewBrief').innerText=`📄 BRIEFING BY BEZOS AI - ${names}\n\n1. What is it?\n${combinedText().slice(0,320)}...\n\n2. 5 To Remember:\n`+top.slice(0,5).map((s,i)=>`${i+1}. ${s}`).join('\n');const allText=combinedText().toLowerCase().replace(/[^a-z ]/g,' ').split(' ').filter(w=>w.length>5);const freq={};allText.forEach(w=>freq[w]=(freq[w]||0)+1);const topW=Object.entries(freq).sort((a,b)=>b[1]-a[1]).slice(0,10).map(e=>e[0]);document.getElementById('keywords').innerHTML=topW.map(k=>`<span class="pill"># ${k}</span>`).join('');document.getElementById('mindMap').innerHTML=topW.slice(0,8).map(k=>`<span>${k}</span>`).join('')+`<span style="background:#ede9fe">+ All PDFs</span>`;flashcards=top.slice(0,12).map(s=>{let w=s.split(' ').filter(x=>x.length>6);let term=w.length?w[Math.floor(Math.random()*w.length)]:'Concept';return {q:`Explain: ${term.replace(/[^A-Za-z]/g,'')}`,a:s}});flashIdx=0;known=0;renderFlash();document.getElementById('statCards').innerText=flashcards.length;document.getElementById('flashCount').innerText=flashcards.length+' cards';generateQuiz();document.getElementById('audioText').innerText='Audio Ready - Bezos AI';document.getElementById('audioStatus').innerText='Press Play';addMsg('ai',`🤖 <b>Bezos AI:</b> Study Kit ready from ${sources.filter(s=>s.selected).length} PDF(s)!`);showTab('summary');saveNow();}
+function renderFlash(){if(!flashcards.length)return;document.getElementById('flashCard').classList.remove('flip');document.getElementById('flashQ').innerText=flashcards[flashIdx].q;document.getElementById('flashA').innerText=flashcards[flashIdx].a;document.getElementById('flashProgress').innerText=`Card ${flashIdx+1} / ${flashcards.length} • Known: ${known}`;}
+function nextCard(){if(!flashcards.length)return;flashIdx=(flashIdx+1)%flashcards.length;renderFlash();}
+function prevCard(){if(!flashcards.length)return;flashIdx=(flashIdx-1+flashcards.length)%flashcards.length;renderFlash();}
+function knowCard(){known++;nextCard();}
+function generateQuiz(){let pool=getTop(30);currentQuiz=[];correct=0;let used=new Set();let allText=combinedText();for(let i=0;i<10&&pool.length;i++){let s=pool[Math.floor(Math.random()*pool.length)];if(used.has(s))continue;used.add(s);let words=s.split(' ').filter(w=>w.length>5&&/^[A-Za-z]+/.test(w));if(words.length<3)continue;let answer=words[Math.floor(Math.random()*words.length)].replace(/[^A-Za-z]/g,'');let q=s.replace(answer,'_____');let distractors=[];let tries=0;let all=allText.split(' ');while(distractors.length<3&&tries<50){tries++;let rw=all[Math.floor(Math.random()*all.length)].replace(/[^A-Za-z]/g,'');if(rw&&rw.toLowerCase()!==answer.toLowerCase()&&!distractors.includes(rw)&&rw.length>4)distractors.push(rw)}let options=[answer,...distractors].sort(()=>Math.random()-.5);currentQuiz.push({q,answer,options});}renderQuiz();}
+function regenerateQuiz(){if(!sources.length){alert('Add PDFs');return}generateQuiz();}
+function renderQuiz(){let box=document.getElementById('quizBox');box.innerHTML='';currentQuiz.forEach((item,idx)=>{let div=document.createElement('div');div.className='quizQ';div.innerHTML=`<b>Q${idx+1}. ${item.q}</b>`;item.options.forEach(opt=>{let b=document.createElement('button');b.className='opt';b.innerText=opt;b.onclick=()=>{let all=div.querySelectorAll('.opt');all.forEach(x=>x.disabled=true);if(opt===item.answer){b.classList.add('correct');correct++;}else{b.classList.add('wrong');all.forEach(x=>{if(x.innerText===item.answer)x.classList.add('correct')})}document.getElementById('score').innerText=`Score: ${correct} / ${currentQuiz.length}`;};div.appendChild(b);});box.appendChild(div);});document.getElementById('score').innerText=`Score: 0 / ${currentQuiz.length}`;}
+function addMsg(who,txt){let d=document.createElement('div');d.className='msg '+(who==='me'?'me':'ai');d.innerHTML=txt.replace(/\n/g,'<br>');document.getElementById('chatBox').appendChild(d);document.getElementById('chatBox').scrollTop=9999;}
+let audioTimer=null;
+function playAudio(){if(!sources.length){alert('Add PDFs');return}let top=getTop(4);let script=`Welcome to Bezos Academia. I am Bezos AI. Today we are breaking down ${sources.length} sources. First, ${top[0]}. Second, ${top[1]}. And finally, ${top[2]}. Go ace your exam!`;document.getElementById('audioStatus').innerText='🔊 Bezos AI is speaking...';if('speechSynthesis' in window){window.speechSynthesis.cancel();let u=new SpeechSynthesisUtterance(script);u.rate=0.95;window.speechSynthesis.speak(u);}let p=0;clearInterval(audioTimer);audioTimer=setInterval(()=>{p+=2;document.getElementById('audioFill').style.width=Math.min(p,100)+'%';if(p>=100)clearInterval(audioTimer);},300);}
+function stopAudio(){if('speechSynthesis' in window)window.speechSynthesis.cancel();clearInterval(audioTimer);document.getElementById('audioStatus').innerText='Stopped';document.getElementById('audioFill').style.width='0%';}
+function copyNotes(){navigator.clipboard.writeText(document.getElementById('viewSummary').innerText+'\n\n'+document.getElementById('viewNotes').innerText);alert('Copied!');}
+function downloadNotes(){let blob=new Blob([document.getElementById('viewNotes').innerText],{type:'text/plain'});let a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='Bezos-AI-Notes.txt';a.click();}
+loadSaved();renderSources();
+</script>
+</body>
+</html>
